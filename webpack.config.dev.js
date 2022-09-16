@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 
+        use: [MiniCssExtractPlugin.loader,
         "css-loader",
         ],
       },
@@ -44,6 +44,14 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+			{
+				test: /\.(woff|woff2)$/, //Si se necesita importar otros archivos solo se coloca aqui.
+				type: "asset",
+				generator: {
+					filename: 'assets/fonts/[hash][ext][query]' //Se indica en que carpeta serán
+					//enviados los fonts
+				}
+			},
     ]
   },
   plugins: [

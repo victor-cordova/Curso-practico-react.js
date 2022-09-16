@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -34,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 
+        use: [MiniCssExtractPlugin.loader,
         "css-loader",
         ],
       },
@@ -47,6 +46,14 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+			{
+				test: /\.(woff|woff2)$/, //Si se necesita importar otros archivos solo se coloca aqui.
+				type: "asset",
+				generator: {
+					filename: 'assets/fonts/[hash][ext][query]' //Se indica en que carpeta serán
+					//enviados los fonts
+				}
+			},
     ]
   },
   plugins: [
@@ -59,20 +66,6 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "./static/[name].[contenthash].css",
-    }),
-    new ImageMinimizerPlugin({
-      minimizer: {
-        options: {
-          // Lossless optimization with custom option
-          // Feel free to experiment with options for better result for you
-          plugins: [
-            // ["gifsicle", { interlaced: true }],
-            ["jpegtran", { progressive: true }],
-            ["optipng", { optimizationLevel: 5 }],
-            // Svgo configuration here https://github.com/svg/svgo#configuration
-          ],
-        },
-      }
     }),
   ],
   optimization: {
