@@ -18,10 +18,6 @@
 	border-radius: 10px;
 }
 
-.OrderItem__title {
-	/* grid-column: 2/4; */
-}
-
 .OrderItem__icon-close {
 	justify-self: flex-end;
 
