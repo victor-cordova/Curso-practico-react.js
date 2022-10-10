@@ -1,0 +1,32 @@
+.ProductItem__image {
+	width: 100%;
+	height: 240px;
+	border-radius: 20px;
+
+	object-fit: cover;
+}
+
+.ProductItem__info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px;
+	align-items: center;
+
+	padding: 0px 8px;
+}
+
+.ProductItem__text {
+	display: grid;
+	grid-template-rows: 30px 30px;
+	align-items: center;
+}
+
+.ProductItem__cart-button {
+	justify-self: flex-end;
+}
+
+@media (max-width: 640px){
+	.ProductItem__image {
+			height: 140px;
+	}
+}

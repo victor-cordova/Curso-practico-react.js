@@ -8,14 +8,27 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: "[name].[contenthash].js",
     clean: true,
+		publicPath: "/",
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
-      Images: path.resolve("src", "static", "images"),
+      Icons: path.resolve("src", "assets", "icons"),
+			Logos: path.resolve("src", "assets", "logos"),
+			Styles: path.resolve("src", "styles"),
+
+			Pure: path.resolve("src", "components", "pure"),
+			Forms: path.resolve("src", "components", "pure", "forms"),
+			Container: path.resolve("src", "components", "container"),
+			Pages: path.resolve("src", "pages"),
+			Hooks: path.resolve("src", "hooks"),
+
+			Models: path.resolve("src", "models"),
+			Utils: path.resolve("src", "utils"),
     }
   },
   mode: "development",
+	devtool: "source-map",
   module: {
     rules: [
       {
@@ -72,5 +85,6 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+		historyApiFallback: true,
   },
 };

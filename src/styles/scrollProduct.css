@@ -1,0 +1,56 @@
+.ScrollProduct {
+	display: grid;
+	place-items: center;
+	gap: 15px;
+}
+
+.scroll-container {
+	scroll-behavior: smooth;
+	position: relative;
+
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.scroll-container__img {
+	display: inline-block;
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0 0 10px 10px;
+
+}
+
+.button-close {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+
+	background-color: var(--white);
+}
+
+.dots {
+	display: grid;
+	gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+
+	/* margin-top: 10px; */
+	width: 80px;
+}
+
+.dots__dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+
+	background-color: var(--text-input-field);
+}
+
+.dots__dot--actived {
+	background-color: var(--very-light-pink);
+}

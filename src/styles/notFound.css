@@ -1,0 +1,39 @@
+.NotFound {
+	display: grid;
+	place-items: center;
+
+	height: 100vh;
+}
+
+.NotFound__container {
+	display: grid;
+	place-items: center;
+	gap: 20px;
+
+	width: 90%;
+	max-width: 400px;
+
+}
+
+.NotFound__container-img-404 {
+	display: grid;
+	place-items: center;
+
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+
+	background-color: var(--text-input-field);
+
+}
+
+.NotFound__img-404 {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+}
+
+.NotFound__container-text {
+	display: grid;
+	place-items: center;
+}

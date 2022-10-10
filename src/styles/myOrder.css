@@ -1,0 +1,63 @@
+.MyOrder {
+	display: grid;
+	/* justify-content: center; */
+	width: 350px;
+	height: calc(100vh - 50px);
+	justify-items: center;
+
+	position: absolute;
+
+	top: 50px;
+	right: 0px;
+
+	background-color: var(--white);
+	border: 1px solid var(--very-light-pink);
+}
+
+.MyOrder__container {
+	display: grid;
+	/* justify-self: center; */
+	gap: 20px;
+
+	width: 90%;
+	grid-template-rows: 40px calc(100vh - 50px - 60px - 100px - 60px - 40px) 100px 60px;
+
+
+
+	/* width: 90%;
+	max-width: 500px; */
+}
+
+.MyOrder__title-container {
+	/* display: none; */
+}
+
+.MyOrder__icon-arrow {
+	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+
+	transform: rotate(180deg);
+
+	cursor: pointer;
+}
+
+.MyOrder-orders {
+	display: grid;
+	gap: 20px;
+
+	margin: 0;
+	padding: 0;
+
+	overflow-y: scroll;
+}
+
+@media (min-width: 640px) {
+	/* .MyOrder__container {
+			grid-template-rows: 60px 90px auto;
+	} */
+
+	/* .MyOrder__title-container {
+			display: block;
+	} */
+}

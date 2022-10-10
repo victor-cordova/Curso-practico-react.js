@@ -1,0 +1,17 @@
+
+.TotalOrder {
+	display: grid;
+	height: 90px;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: flex-end;
+
+	padding: 0 16px;
+
+	background-color: var(--text-input-field);
+	border-radius: 6px;
+}
+
+.TotalOrder__info {
+	width: 100%;
+}

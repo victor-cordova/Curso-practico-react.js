@@ -1,0 +1,26 @@
+.login__title {
+	margin-bottom: 28px;
+
+	font-size: var(--lg);
+}
+
+.form__value {
+	margin: 8px 0 32px 0;
+
+	color: var(--very-light-pink);
+	font-size: var(--md);
+}
+
+@media (max-width: 640px){
+	.login__container {
+			grid-template-rows: 1fr auto auto auto;
+	}
+
+	.login__logo {
+			display: block;
+	}
+
+	.login__text--forgot-password {
+			margin-bottom: 0px;
+	}
+}

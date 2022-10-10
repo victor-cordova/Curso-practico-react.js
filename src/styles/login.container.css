@@ -1,0 +1,42 @@
+.login {
+	display: grid;
+	place-items: center;
+
+	height: 100vh;
+	position: relative;
+}
+
+.login__container {
+	display: grid;
+	place-items: center;
+	gap: 20px;
+
+	max-width: 350px;
+	width: 90%;
+}
+
+.login__logo-container {
+	display: none;
+	place-self: center;
+
+	margin-bottom: 20px;
+	/* margin-bottom: 48px; */
+}
+
+.login__logo--yard-sale {
+	/* margin-bottom: 48px; */
+
+	width: 150px;
+}
+
+@media (max-width: 640px){
+
+	.login__logo-container {
+			display: grid;
+	}
+
+	.login__text--forgot-password {
+			margin-bottom: 0px;
+	}
+}
+

@@ -1,0 +1,35 @@
+.OrderItem {
+	display: grid;
+	grid-template-columns: 90px 1.2fr 0.5fr;
+	grid-template-rows: 1fr 20px;
+	align-items: center;
+	gap: 10px;
+
+	height: 100px;
+
+}
+
+.OrderItem__img {
+	grid-row: 1 / 3;
+
+	width: 80px;
+	height: 80px;
+
+	border-radius: 10px;
+}
+
+.OrderItem__title {
+	/* grid-column: 2/4; */
+}
+
+.OrderItem__icon-close {
+	justify-self: flex-end;
+
+	margin-right: 8px;
+}
+
+.OrderItem__price {
+	justify-self: flex-end;
+
+	margin-right: 8px;
+}

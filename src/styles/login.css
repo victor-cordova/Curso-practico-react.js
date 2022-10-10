@@ -1,0 +1,26 @@
+/* .login__text {
+	font-size: var(--sm);
+} */
+
+.login__text--forgot-password {
+	margin-bottom: 20px;
+}
+
+.login__link {
+	color: var(--hospital-green);
+	text-decoration: none;
+}
+
+@media (max-width: 640px){
+	.login__container {
+			grid-template-rows: 1fr auto auto auto;
+	}
+
+	.login__logo {
+			display: block;
+	}
+
+	.login__text--forgot-password {
+			margin-bottom: 0px;
+	}
+}

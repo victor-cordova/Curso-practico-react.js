@@ -1,0 +1,29 @@
+.ProductList {
+	display: grid;
+	justify-items: center;
+
+	/* height: 100vh; */
+	height: calc(100vh - 50px);
+	padding-top: calc(50px + 20px);
+}
+
+.ProductList__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 240px);
+	place-content: center;
+	gap: 20px;
+
+	width: calc(100% - 40px);
+
+}
+
+
+
+
+@media (max-width: 640px){
+	.ProductList__container {
+			/* display: grid; */
+			grid-template-columns: repeat(auto-fill, 140px);
+			/* gap: 20px */
+	}
+}

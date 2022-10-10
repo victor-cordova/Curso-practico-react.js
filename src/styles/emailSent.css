@@ -1,0 +1,81 @@
+.login__email-container {
+	display: grid;
+	place-items: center;
+	justify-self: center;
+
+
+	border-radius: 50%;
+	width: 132px;
+	height: 132px;
+	margin-bottom: 24px;
+
+	background-color: var(--text-input-field);
+}
+
+.login__logo--email {
+	/* display: block; */
+	/* place-self: center; */
+
+	width: 80px;
+}
+
+.login__container-text {
+	display: grid;
+	place-items: center;
+}
+
+.login__title {
+	margin-bottom: 12px;
+
+	text-align: center;
+	font-size: var(--lg);
+}
+
+.login__subtitle {
+	text-align: center;
+
+	margin-top: 0;
+	margin-bottom: 32px;
+
+	color: var(--very-light-pink);
+	font-size: var(--md);
+}
+
+.primary-button {
+	border: none;
+	/* border-radius: 8px;
+	height: 48px;
+	width: 100%; */
+
+	/* font-size: var(--md);
+	font-weight: bold; */
+	color: var(--white);
+
+	background-color: var(--hospital-green);
+
+	/* cursor: pointer; */
+}
+
+.login-button {
+	border-radius: 8px;
+	height: 48px;
+	width: 100%;
+
+	margin-top: 12px;
+	margin-bottom: 32px;
+
+	font-size: var(--md);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+@media (max-width: 640px){
+	/* .login__container {
+		grid-template-rows: 1fr auto auto auto auto auto;
+	} */
+
+	.login__logo {
+		display: block;
+	}
+}

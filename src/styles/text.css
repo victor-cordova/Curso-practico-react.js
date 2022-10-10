@@ -1,0 +1,42 @@
+.primary-text {
+	font-size: var(--lg);
+	font-weight: bold;
+	color: var(--black);
+}
+
+.secondary-text {
+	font-size: var(--md);
+	color: var(--very-light-pink);
+	/* text-align: center; */
+}
+
+.third-text {
+	font-size: var(--sm);
+	color: var(--very-light-pink);
+}
+
+.fourth-text {
+	font-size: var(--sm);
+	color: var(--hospital-green);
+	text-decoration: none;
+}
+
+.fifth-text {
+	font-size: var(--md);
+	color: var(--black);
+	font-weight: bold;
+}
+
+.sixt-text {
+	font-size: var(--sm);
+	color: var(--black);
+	font-weight: bold;
+}
+
+.centered {
+	text-align: center;
+}
+
+.bolded {
+	font-weight: bold;
+}

@@ -1,0 +1,41 @@
+.form {
+	display: grid;
+	gap: 20px;
+
+	width: 100%;
+}
+
+.form__label {
+	margin-bottom: 4px;
+}
+
+.form__input {
+	padding: 8px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 8px;
+	height: 32px;
+
+	font-size: var(--md);
+
+	background-color: var(--text-input-field);
+}
+
+.form__input::placeholder {
+	color: var(--very-light-pink);
+}
+
+.login-button {
+	border-radius: 8px;
+	height: 48px;
+	width: 100%;
+
+	font-size: var(--md);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+@media (max-width: 640px){
+
+}

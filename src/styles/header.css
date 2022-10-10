@@ -1,0 +1,113 @@
+.Header {
+	display: grid;
+	justify-items: center;
+
+	height: 50px;
+	width: 100%;
+
+	position: fixed;
+	top: 0px;
+	/* bottom: ; */
+
+	border-bottom: 1px solid var(--very-light-pink);
+
+	background-color: var(--white);
+}
+
+.Header__container {
+	display: grid;
+	/* grid-template-columns: 110px 6fr 1.7fr; */
+	grid-template-columns: minmax(20px, 100px) minmax(420px, 6fr) 170px;
+	align-items: center;
+
+	width: calc(100% - 40px);
+}
+
+.Header__logo-yard-sale {
+	justify-self: center;
+}
+
+.Header__logo-yard-sale-img {
+	width: 100%;
+}
+
+.Header__menu {
+	display: none;
+}
+
+.Header__list-features {
+	display: flex;
+	/* grid-template-columns: repeat(auto-fill, 90px); */
+	gap: 6px;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.Header__right-side {
+	display: grid;
+	grid-template-columns: auto 30px;
+	align-items: center;
+}
+
+.Header-user {
+	display: grid;
+	place-items: center;
+}
+
+.Header-user__arrow {
+	margin-left: 5px;
+	width: 12px;
+	height: 12px;
+
+	transform: rotate(90deg);
+
+	cursor: pointer;
+}
+
+.Header-cart {
+	position: relative;
+}
+
+.Header-cart__amount {
+	position: absolute;
+	top: -8px;
+	left: 16px;
+	display: grid;
+	place-items: center;
+
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+
+	font-size: var(--sm);
+	font-weight: bold;
+
+	background-color: var(--hospital-green);
+}
+
+@media (max-width: 640px) {
+	.Header__container {
+			grid-template-columns: 1fr 1fr 1fr;
+
+			width: 90%;
+	}
+
+	.Header__menu {
+			display: block;
+	}
+
+	.Header__list-features {
+			display: none;
+	}
+
+	.Header__right-side {
+			grid-template-columns: 1fr;
+			justify-items: flex-end;
+	}
+
+	.Header-user {
+			display: none;
+	}
+}

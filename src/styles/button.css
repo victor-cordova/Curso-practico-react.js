@@ -1,0 +1,58 @@
+.button {
+	border-radius: 8px;
+	height: 48px;
+	width: 100%;
+
+	font-size: var(--md);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+.button-icon {
+	display: grid;
+	place-items: center;
+
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+
+	cursor: pointer;
+}
+
+.button-icon__icon-close {
+	width: 20px;
+	height: 20px;
+}
+
+.button-icon__icon {
+	width: 35px;
+	height: 35px;
+}
+
+.primary-button {
+	border: none;
+
+	color: var(--white);
+
+	background-color: var(--hospital-green);
+}
+
+.secondary-button {
+	border: 1px solid var(--hospital-green);
+
+	color: var(--hospital-green);
+
+	background-color: var(--white);
+}
+
+@media (max-width: 640px) {
+	.button--bottom {
+		position: absolute;
+		max-width: 350px;
+		width: 90%;
+		bottom: 30px;
+	}
+}
